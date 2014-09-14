@@ -16,9 +16,12 @@ module.exports = function(grunt) {
 
 	grunt.config.set('watch', {
 		api: {
-
 			// API files to watch:
-			files: ['api/**/*']
+			files: ['api/**/*', 'client/**/*']
+		},
+		client: {
+			files: ['client/**/*'],
+			tasks: ['browserify:client'],
 		},
 		assets: {
 
