@@ -2,9 +2,19 @@
 
 var React = require('React');
 
+var Header = require('./ui/Header.jsx');
+var Content = require('./ui/Content.jsx');
+var Footer = require('./ui/Footer.jsx');
+
 var Main = React.createClass({
 	render: function() {
-		return <h1>Hello, world! %32523% React works!</h1>;
+		return (
+			<div className="wrapper">
+        <Header />
+        <Content />
+        <Footer />
+			</div>
+		);
 	}
 });
 
@@ -12,4 +22,3 @@ React.renderComponent(
   <Main />,
   document.getElementById('main')
 );
-
