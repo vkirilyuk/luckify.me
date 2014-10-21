@@ -14,7 +14,7 @@ var TextInput = React.createClass({
 
   render: function() {
     return (
-      <input className={this.props.className} />
+      <input type="text" className={this.props.className} />
     );
   }
 });

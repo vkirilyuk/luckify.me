@@ -31,17 +31,25 @@ var CreateTask = React.createClass({
 
   render: function() {
     return (
-      <Card label='Create new task'>
-        <Card.Section>
-          <div>
-            Title: <TextInput ref="name" />
+      <fieldset>
+        <legend>Create new task</legend>
+        <div class="row">
+          <div class="small-12 columns">
+            <label>Pick a name
+              <TextInput ref="name"/>
+            </label>
           </div>
-          <div className="pvm">
-            Description: <TextArea ref="desc" />
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <label>Why do you want to do it?
+              <TextArea ref="desc" />
+            </label>
           </div>
+        </div>
+
           <Button label="Create new" onClick={this._onClick} />
-        </Card.Section>
-      </Card>
+      </fieldset>
     );
   }
 });

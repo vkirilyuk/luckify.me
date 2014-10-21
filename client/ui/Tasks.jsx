@@ -8,6 +8,7 @@ var Footer = React.createClass({
 
   getInitialState: function() {
     return {
+
     };
   },
 

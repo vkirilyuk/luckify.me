@@ -3,6 +3,7 @@
 var React = require('React');
 
 var Tasks = require('./Tasks.jsx');
+var RandomTask = require('./RandomTask.jsx');
 var CreateTask = require('./CreateTask.jsx');
 
 var Content = React.createClass({
@@ -14,7 +15,7 @@ var Content = React.createClass({
   render: function() {
     return (
       <div className="content">
-        <Tasks ref="tasks" />
+        <RandomTask />
         <CreateTask onTaskCreated={this._onTaskCreated} />
       </div>
     );
@@ -22,3 +23,5 @@ var Content = React.createClass({
 });
 
 module.exports = Content;
+
+// <Tasks ref="tasks" />

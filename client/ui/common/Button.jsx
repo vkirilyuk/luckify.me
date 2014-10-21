@@ -10,7 +10,7 @@ var Button = React.createClass({
 
   render: function() {
     return (
-      <button onClick={this.props.onClick} className={'button ' + this.props.className}>
+      <button onClick={this.props.onClick} className={'button radius tiny ' + (this.props.className || '')}>
         {this.props.label}
       </button>
     );

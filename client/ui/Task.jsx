@@ -26,17 +26,16 @@ var Task = React.createClass({
   render: function() {
     var task = this.props.task;
     return (
-      <Card label={task.name} canToggle={true}>
-        <Card.Section>
-          <div className="task-description">
-            {task.description}
-          </div>
-          <div className="task-actions">
-            <Button className="header-button" onClick={this._delete} label="Delete" />
-            <Button onClick={this._complete} label="Complete" />
-          </div>
-        </Card.Section>
-      </Card>
+      <fieldset>
+        <legend>{task.name}</legend>
+        <div className="task-description">
+          {task.description}
+        </div>
+        <div className="task-actions">
+          <Button onClick={this._delete} label="Delete" />
+          <Button onClick={this._complete} label="Complete" />
+        </div>
+      </fieldset>
     );
   }
 });
