@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 
-var React = require('React');
+var React = require('react');
 
 var Tasks = require('./Tasks.jsx');
 var RandomTask = require('./RandomTask.jsx');

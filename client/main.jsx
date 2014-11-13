@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 
-var React = require('React');
+var React = require('react');
 
 var Header = require('./ui/Header.jsx');
 var Content = require('./ui/Content.jsx');
